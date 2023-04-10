@@ -4,10 +4,12 @@ body
     background-size: cover;
     background-position-y: -700px;
 }
+
 input
 {
     color: white;
 }
+
 #ui
 {
     background-color: rgb(158, 140, 140);
@@ -18,14 +20,69 @@ input
     margin-right: auto;
     width: 1000px;
     border-radius: 10px;
+    padding-bottom: 50px;
 }
+
 #info
 {
     float: left;
     margin-left: 50px;
     padding-bottom: 50px;
 }
+
 #loginError
 {
     color: rgb(129, 34, 34);
+}
+
+#fb
+{
+	background: url('sprites.gif') no-repeat -106px 0;
+	width: 100px;
+	height: 100px;
+}
+
+#fb:hover
+{
+	background: url('sprites.gif') no-repeat 0 0;
+	width: 100px;
+	height: 100px;
+	animation: move 3s infinite;
+}
+
+#insta
+{
+	background: url('sprites.gif') no-repeat -108px -105px;
+	width: 100px;
+	height: 100px;
+}
+
+#insta:hover
+{
+	background: url('sprites.gif') no-repeat -3px -105px;
+	width: 100px;
+	height: 100px;
+	animation: move 3s infinite;
+}
+
+#gmail
+{
+	background: url('sprites.gif') no-repeat -106px -210px;
+	width: 100px;
+	height: 100px;
+	transform: top;
+}
+
+#gmail:hover
+{
+	background: url('sprites.gif') no-repeat -5px -210px;
+	width: 100px;
+	height: 100px;
+	top: 10px;
+	animation: move 3s infinite;
+}
+
+@keyframes move
+{
+	50% {transform: translate(0, -20px);}
 }
